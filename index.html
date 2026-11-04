@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asteroids BD — arcade space shooter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1 id="title">Asteroids BD</h1>
+    <p id="tag"></p>
+    <button id="langBtn" type="button">Bangla</button>
+  </header>
+
+  <section id="hud" aria-label="Score board">
+    <span id="hudScore"></span>
+    <span id="hudLives"></span>
+    <span id="hudLevel"></span>
+    <span id="hudBest"></span>
+  </section>
+
+  <section id="stage">
+    <canvas id="game" width="720" height="480" aria-label="Asteroids game field"></canvas>
+    <div id="overlay">
+      <p id="overlayMsg"></p>
+      <button id="startBtn" type="button">Start game</button>
+    </div>
+  </section>
+
+  <section id="controls" aria-label="Game controls">
+    <button id="pauseBtn" type="button">Resume</button>
+    <button id="newBtn" type="button">New field</button>
+    <button id="jumpBtn" type="button">Jump</button>
+    <button id="soundBtn" type="button">Sound: On</button>
+  </section>
+
+  <section id="touch" aria-label="Touch controls">
+    <button id="btnLeft" type="button" aria-label="Rotate left">&#8592;</button>
+    <button id="btnRight" type="button" aria-label="Rotate right">&#8594;</button>
+    <button id="btnThrust" type="button" aria-label="Thrust">&#8593;</button>
+    <button id="btnFire" type="button" aria-label="Fire">FIRE</button>
+  </section>
+
+  <p id="how"></p>
+  <footer>
+    <p>Offline single-page game. No account, no network requests, no data leaves your device. Best score is stored only in this browser. Casual arcade game, not affiliated with any classic arcade title.</p>
+  </footer>
+</main>
+<script src="logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #0b1020; color: #eef2fb;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 16px; }
+header { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+header h1 { margin: 0; font-size: 28px; }
+header p { margin: 0; color: #aebdd8; flex: 1 1 220px; }
+button { background: #1d2b4d; color: #fff; border: 1px solid #3a4f80;
+  border-radius: 8px; padding: 10px 16px; font-size: 16px; cursor: pointer; }
+button:hover { background: #2a3d6b; }
+#langBtn { margin-left: auto; }
+#hud { display: flex; flex-wrap: wrap; gap: 16px; margin: 14px 0;
+  font-size: 18px; font-weight: 600; }
+#stage { position: relative; }
+canvas { display: block; width: 100%; height: auto; background: #0b1020;
+  border: 2px solid #3a4f80; border-radius: 10px; }
+#overlay { position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 14px;
+  background: rgba(5, 8, 18, 0.72); border-radius: 10px; text-align: center; padding: 16px; }
+#overlay.hidden { display: none; }
+#overlayMsg { font-size: 20px; margin: 0; }
+#controls, #touch { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+#touch button { flex: 1 1 0; min-width: 60px; padding: 16px 8px; font-size: 20px; }
+#btnFire { background: #7a2e2e; }
+#how { color: #aebdd8; line-height: 1.5; }
+footer { color: #8ea2c9; font-size: 14px; line-height: 1.5; }
+@media (max-width: 480px) {
+  main { padding: 10px; }
+  header h1 { font-size: 24px; }
+  #hud { font-size: 16px; gap: 10px; }
+}
